@@ -21,6 +21,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 50px;
+    padding-bottom: 70px;
 }
 
 .attribution {
@@ -85,6 +87,7 @@ body {
     font-size: 15px;
     font-weight: 400;
     line-height: 1.5rem;
+    color: var(--neutral-slightly-transparent-white);
 }
 
 .card-stats {
@@ -108,4 +111,53 @@ body {
     font-family: "Lexend Deca", sans-serif;
     font-size: 0.867rem;
     line-height: 16.25px;
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        margin: 0;
+    }
+    .card {
+        width: 1070px;
+        height: 446px;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .card-body {
+        width: 50%;
+        box-sizing: border-box;
+        padding-top: 70px;
+
+    }
+
+    .card-image {
+        width: 50%;
+        background-image: linear-gradient(
+                0deg,
+                rgba(83, 0, 133, 0.5),
+                rgba(83, 0, 133, 0.5)
+            ),
+            url("../../assets/images/image-header-desktop.jpg");
+    }
+
+    .card-title {
+        font-size: 2.2rem;
+        padding-left: 31px;
+    }
+
+    .card-description {
+        padding-left: 31px;
+        padding-right: 50px;
+    }
+
+    .card-stats {
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 40px;
+        padding-left: 71px;
+        padding-right: 122px;
+        gap: 60px;
+    }
 }
